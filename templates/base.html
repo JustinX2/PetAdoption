@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pet Adoption Agency</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="{{ url_for('list_pets') }}">Home</a>
+                <a href="{{ url_for('add_pet') }}">Add Pet</a>
+            </nav>
+        </header>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+    </body>
+</html>
