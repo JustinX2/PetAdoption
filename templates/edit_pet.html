@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Edit Pet: {{ pet.name }}</h1>
+<form method="POST">
+    {{ form.csrf_token }}
+    {{ form.photo_url.label }} {{ form.photo_url }}<br>
+    {{ form.notes.label }} {{ form.notes }}<br>
+    {{ form.available.label }} {{ form.available }}<br>
+    <button type="submit">Save Changes</button>
+</form>
+{% endblock %}
